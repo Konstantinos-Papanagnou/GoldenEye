@@ -1,0 +1,25 @@
+# Nmap 7.80 scan initiated Fri May  7 12:53:00 2021 as: nmap -sS -sV -sC -vvv -p- -oN nmap/all_ports 10.10.55.232
+Increasing send delay for 10.10.55.232 from 0 to 5 due to 310 out of 1033 dropped probes since last increase.
+Nmap scan report for 10.10.55.232 (10.10.55.232)
+Host is up, received echo-reply ttl 63 (0.13s latency).
+Scanned at 2021-05-07 12:53:01 UTC for 950s
+Not shown: 65531 closed ports
+Reason: 65531 resets
+PORT      STATE SERVICE     REASON         VERSION
+25/tcp    open  smtp        syn-ack ttl 63 Postfix smtpd
+|_smtp-commands: ubuntu, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, 
+|_ssl-date: TLS randomness does not represent time
+80/tcp    open  http        syn-ack ttl 63 Apache httpd 2.4.7 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: GoldenEye Primary Admin Server
+55006/tcp open  ssl/unknown syn-ack ttl 63
+|_ssl-date: TLS randomness does not represent time
+55007/tcp open  pop3        syn-ack ttl 63 Dovecot pop3d
+|_pop3-capabilities: RESP-CODES STLS PIPELINING AUTH-RESP-CODE SASL(PLAIN) USER TOP CAPA UIDL
+|_ssl-date: TLS randomness does not represent time
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May  7 13:08:51 2021 -- 1 IP address (1 host up) scanned in 951.36 seconds
