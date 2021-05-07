@@ -3,6 +3,8 @@
 > Konstantinos Pap - 7/5/2021
 export IP=10.10.55.232
 
+## Troubleshooting Notes: 
+	In linux for some reason the moodle editing system on the text area would just not load. So you should probably head over to windows in order for that to work (Took me a solid 40 minutes to figure that out)
 
 ## Start off with a simple nmap enumaration on default ports. 
 Found 25 and 80 open. Took a look on 80 which seemed it was a static webpage (Especially after running gobuster and getting 0 hits.)
@@ -368,6 +370,3 @@ If you captured this make sure to go here.....
 
 ```
 Go over to the special url noted by the flag.txt file if you are a fan of james bond movies ;)
-
-#Final Notes: 
-	In linux for some reason the moodle editing system on the text area would just not load. So you should probably head over to windows in order for that to work (Took me a solid 40 minutes to figure that out)
